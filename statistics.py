@@ -1,7 +1,7 @@
 #!/usr/bin/env runaiida
 # pylint: disable=import-outside-toplevel
 """
-Script to get some anonymous statistics on the usage of the AiiDA profile.
+Script to get anonymous statistics on the nodes stored in an AiiDA profile.
 
 This returns the (process) types of nodes in the DB and their count.
 
