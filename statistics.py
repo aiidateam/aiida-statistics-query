@@ -5,10 +5,8 @@ Script to get some anonymous statistics on the usage of the AiiDA profile.
 
 This returns the (process) types of nodes in the DB and their count.
 
-*NOTE*: You can just execute this script in your virtual environment
-if you want to get the results for your default AiiDA profile; otherwise, 
-run it with 
-`verdi -p PROFILE_NAME run statistics.py`. 
+*NOTE*: Simply execute ./statistics.py in your virtual environment to get the results for your 
+default AiiDA profile; otherwise, run `verdi -p PROFILE_NAME run statistics.py`. 
 """
 from __future__ import absolute_import
 from __future__ import print_function
