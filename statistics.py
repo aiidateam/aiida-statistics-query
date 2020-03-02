@@ -3,7 +3,7 @@
 """
 Script to get some anonymous statistics on the usage of the AiiDA profile.
 
-This mostly returns the type of nodes in the DB and their count.
+This returns the (process) types of nodes in the DB and their count.
 
 *NOTE*: You can just execute this script in your virtual environment
 if you want to get the results for your default AiiDA profile; otherwise, 
