@@ -49,7 +49,11 @@ def query_aiida_1():
 
     qb = QueryBuilder()
 
-    qb.append(Node, project=['node_type', 'process_type'])
+    qb.append(Node,
+              project=[
+                  'node_type', 'process_type', 'attributes.version.core',
+                  'attributes.version.plugin'
+              ])
     return qb.all()
 
 
