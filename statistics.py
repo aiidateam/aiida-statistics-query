@@ -1,12 +1,14 @@
 #!/usr/bin/env runaiida
 # pylint: disable=import-outside-toplevel
 """
-Script to get anonymous statistics on the nodes stored in an AiiDA profile.
+Script to collect anonymous statistics on the nodes stored in an AiiDA profile.
 
-This returns the (process) types of nodes in the DB and their count.
+This counts the number of nodes in your profile, split by (process) type.
 
-*NOTE*: Simply execute ./statistics.py in your virtual environment to get the results for your 
-default AiiDA profile; otherwise, run `verdi -p PROFILE_NAME run statistics.py`. 
+Usage:: Execute `./statistics.py` in your AiiDA python environment for statistics on the default AiiDA profile.
+        Execute `verdi -p PROFILE_NAME run statistics.py` for statistics on any other AiiDA profile. 
+
+Note: This script is designed to support AiiDA versions >= 0.10 and runs both under python 2 and 3.
 """
 from __future__ import absolute_import
 from __future__ import print_function
