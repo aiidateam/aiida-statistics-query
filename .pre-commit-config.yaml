@@ -2,6 +2,7 @@
 # pre-commit install
 
 # modernizer: make sure our code-base is Python 3 ready
+repos:
 - repo: https://github.com/python-modernize/python-modernize.git
   rev: a234ce4e185cf77a55632888f1811d83b4ad9ef2
   hooks:
@@ -11,20 +12,12 @@
       - --write
       - --nobackups
 
-- repo: local
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.3.4
   hooks:
-  # yapf = yet another python formatter
-  - id: yapf
-    name: yapf
-    entry: yapf
-    language: system
-    types: [python]
-    args: ["-i"]
-
-  # prospector: collection of linters
-  - id: prospector
-    language: system
-    types: [file, python]
-    name: prospector
-    description: "This hook runs Prospector: https://github.com/landscapeio/prospector"
-    entry: prospector
+    # Run the linter.
+    - id: ruff
+      args: [ --fix ]
+    # Run the formatter.
+    - id: ruff-format
