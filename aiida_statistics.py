@@ -5,8 +5,7 @@ Script to collect anonymous statistics on the nodes stored in an AiiDA profile.
 This counts the number of nodes in your profile, split by (process) type.
 
 Usage: Execute `verdi run aiida_statistics.py` in your AiiDA python environment for statistics on the default AiiDA
-profile.
-    Execute `verdi -p PROFILE_NAME run aiida_statistics.py` for statistics on any other AiiDA profile.
+profile (or `verdi -p <PROFILE_NAME> run aiida_statistics.py` for statistics on any other AiiDA profile which is not the default).
 
 Note: This script is designed to support AiiDA versions >= 0.10 and runs both under python 2 and 3.
 """
